@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="~/Scripts/jquery-update.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border: hidden;
+        color: black;
+      }
+
+      td {
+        background-color: white;
+        text-align: center;
+      }
+
+      table {
+        margin-top: 10px;
+      }
+
+      .jk {
+        width: 350px;
+      }
+
+      .l {
+        font-size: 30px;
+      }
+      .me {
+        text-align: right;
+        font-weight: bold;
+      }
+      .my {
+        text-align: left;
+        font-weight: bold;
+      }
+      .o {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .v {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .e {
+        text-decoration: underline;
+      }
+      .love {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="aa"
+      style="width:1000px; height:750px; padding:20px; align-content:center; border: 10px solid #787878"
+      id="printableArea"
+    >
+      <div
+        style="width:950px; height:700px; padding:20px; text-align:center; border: 5px solid #787878"
+      >
+        <table
+          class="table"
+          style="table-layout: fixed !important; word-wrap: break-word !important;"
+        >
+          <tr>
+            <td colspan="3">
+              <span style="font-size:50px; font-weight:bold"
+                >Certificate of Completion</span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <img src="use.jpg" alt="" width="650px" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <span class="o"> My Support My Way</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <span class="v">
+                Certifies that <span class="e"> Amit Taneja</span></span
+              >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <span class="love">
+                Has successfully completed ' My Support My Way Staff Induction'
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td
+              class="my"
+              style="
+            font-weight: bold;font-size: 18px;"
+            >
+              My Support My Way
+            </td>
+            <td
+              class="me"
+              style="
+            font-weight: bold;font-size: 18px;"
+            >
+              Amit Taneja
+            </td>
+            <td rowspan="3">
+              <img
+                src="https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+                height="200px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="me">
+              ada.amit@gmail.com
+              <br />
+              Company: SAHP
+            </td>
+          </tr>
+          <tr>
+            <td class="my">
+              47 Marion Road<br />
+              Plympton, South Australia, 5038<br />
+              Australia<br />
+              P: (Phone) +61430206786
+            </td>
+            <td class="me">
+              4/ 40 Audrey Street
+              <br />Plympton, South Australia, 5038
+              <br />
+              Australia<br />
+              P: (Phone) +61430206786
+            </td>
+          </tr>
+          <tr>
+            <td
+              colspan="3"
+              style="
+            font-weight: bold;"
+            >
+              Ref:#65448
+            </td>
+          </tr>
+          <tr>
+            <td
+              colspan="3"
+              style="
+            font-weight: bold;"
+            >
+              Inducted on: Oct 15, 2019 - Expires On: Sep 15, 2022,
+            </td>
+          </tr>
+          <tr>
+            <td
+              colspan="3"
+              style="
+            font-weight: bold;"
+            >
+              Powered by inductforwork.com.au
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <center>
+      <input
+        type="button"
+        class="but"
+        onclick="printDiv('printableArea')"
+        value="Print Data!"
+      />
+    </center>
+    <script>
+      function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+      }
+    </script>
+  </body>
+</html>
